@@ -5,30 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="Styles/about.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="aboutscript.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+<!--What we need in the about page
+contact info
+instagram posts
+photo gallery-->
 <body>
     <header id = "about_header">
         <div id="logo"></div>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <img src="pskPNG3.png" alt="Image of header" class="nav-image">
+            <img src="photos/pskPNG3.png" alt="Image of header" class="nav-image">
             <a href="merch.html">Merch</a>
             <a href="">Menu</a>
           </nav>
     </header>
 
     <main>
-        <section id = "about-us">
-            <h1>About Us</h1>
-            <p>
-                Welcome to Powell's Secret Kitchen!
-                Here you can learn more about our business and
-                all of our merch and sandwiches
-            </p>
-        </section>
+        <div id = "about-us">
+            <div class="gallery">
+                <h2>Gallery</h2>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1/3</div>
+                        <img src="photos/assemline.jpg" style="width:100%">
+                        <div class="text">Caption text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2/3</div>
+                        <img src="photos/teamsign.jpeg" style="width:100%">
+                        <div class="text">Caption text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3/3</div>
+                        <img src="photos/sign.jpeg" style="width:100%">
+                        <div class="text">Caption text</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div style="text-align:center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+            </div>
+            <div class="feedback">
+                <h4>Feedback!</h4>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDNl0SxvsYAZur0HPEdv3x0vib-X-P8c16h9r70paDznJTEg/viewform" title="google" class="frame" style="border:none"></iframe>
+            </div>
+        </div>
     </main>
 
     <footer>

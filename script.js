@@ -17,6 +17,21 @@ window.addEventListener('click', function(event) {
 });
 
 $(function(){
+  var previousScroll = 0;
+  $(window).scroll(function(){
+    var currentScroll = $(this).scrollTop();
+    if(currentScroll >= previousScroll+5){
+      $("body").addClass("sticky-header");
+    }else if (previousScroll - currentScroll > 5){
+      $("body").removeClass("sticky-header");
+    }
+    previousScroll = currentScroll;
+  });
+});
+
+
+/*$(function(){
+    var previousScroll = 0;
     $(window).scroll(function(){
       var winTop = $(window).scrollTop();
       if(winTop >= 30){
@@ -26,3 +41,4 @@ $(function(){
       }//if-else
     });//win func.
   });//ready func.
+  */

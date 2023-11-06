@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+:root{
+  --red: #b91d1e;
+  --stickyheaderblack: #151414;
+}
+
+.kickflip{
+    width: 90%;  /* or any width you prefer */
+    max-width: 10%; /* or adjust as needed */
+    height: auto;
+    margin: 20px 0; /* adds some space above and below the image */
+
+}
+
+.merch-items {
+    display: grid;
+    gap: 20px;
+    margin: 20px 0;
+    padding-right: 30%;
+    padding-left: 30%;
+    /* start with 1 item per row for mobile devices */
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+.merchbubble{
+    background-color: var(--red);
+    color: #f4f4f4;
+    border-radius: 50px;
+    max-width: 780px;
+    margin: 0 auto;
+    border: 2px white;
+    text-align: center;
+}
+
+@media (max-width: 900px) { /* This means when the screen is 768px wide or smaller */
+    .merch-items {
+        display: grid;
+        gap: 20px;
+        padding-right: 5%;
+        padding-left: 5%;
+        /* start with 1 item per row for mobile devices */
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+.merch-item {
+    background-color: #e0e0e0;
+    border: 3px solid #121212; 
+    overflow: hidden; 
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.merch-item #merchbox {
+    background-color: #e0e0e0;
+    display: block;
+    border: none;
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+.merch-item img {
+    max-width: 100%;
+    display: block;
+}
+
+.itemtitle{
+    color: #121212;
+    background-color: #e0e0e0;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.price{
+    color: #121212;
+    background-color: #e0e0e0;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.OrderButton:hover{
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    border: none;
+    color:#c61e1e;
+    transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out,border-width .2s ease-in-out;
+}
+
+.OrderButton{
+    font-size: 80px;
+    color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    background-color: #121212;
+    border-radius: 10px;
+    margin: 12px;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .form-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 540px;
+  }
+  
+  .form-content img {
+    width: 100%;  /* or any width you prefer */
+    max-width: 500px; /* or adjust as needed */
+    margin: 20px 0; /* adds some space above and below the image */
+  }
