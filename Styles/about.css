@@ -90,7 +90,8 @@ h1, h2, h3, h4{
 
 
 .instagram{
-    background-color: #e6e3e1;
+    background-color: #121212;
+    color: #e6e3e1;
     padding: 20px 10px; 
     max-width: 700px;
     border-radius: 20px; 
@@ -98,7 +99,8 @@ h1, h2, h3, h4{
     align-items: center;
 }
 .gallery{
-    background-color: #e6e3e1;
+    background-color: #363434;
+    color:#e6e3e1;
     padding: 20px 10px; 
     max-width: 700px;
     border-radius: 20px; 
@@ -109,7 +111,8 @@ h1, h2, h3, h4{
     flex-direction: column; /* Stack children vertically */
 }
 .feedback {
-    background-color: #e6e3e1;
+    background-color: #363434;
+    color:#e6e3e1;
     padding: 20px 10px;
     max-width: 700px;
     border-radius: 20px;

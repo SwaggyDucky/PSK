@@ -82,6 +82,11 @@ body {
   border-radius: 2px;
   transform: translateZ(0);
 }
+
+.imgbtn:hover{
+  box-shadow: 0 0 0 0px #121212;
+}
+
 #about_header nav a:hover {
   box-shadow: 0 0 0 1px #fff;
 }
@@ -159,6 +164,17 @@ nav li {
       /* start with 1 item per row for mobile devices */
       grid-template-columns: repeat(1, 1fr); 
   }
+
+  #main_header nav a {
+    color: #fff;
+    display: inline-block;
+    padding: 5px 5px;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 2px;
+    transform: translateZ(0);
+  }
+
 }
 
 .merch-itemmain {
@@ -341,4 +357,7 @@ body.sticky-header #main_header h1 {
     margin: 20px 0; /* adds some space above and below the image */
   }
 
+  #Welcome, #test {
+    margin: 10px;
+  }
 }
