@@ -7,72 +7,86 @@
     <link rel="stylesheet" href="Styles/styles.css">
     <script src="script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
 </head>
 
 <div id="modal" class="modal">
     <div class="modal-content">
         <span class="close-btn">&times;</span>
         <h2>Follow this map to locate the secret kitchen</h2>
-        <img src="photos/background.png" alt="Map to Secret Kitchen">
+        <img src="photos/map.jpg" alt="Map to Secret Kitchen">
     </div>
 </div>
 
 <body>
 
-    <header id = "main_header">
-        <h1>Powell's Secret Kitchen</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a class="imgbtn" href="index.html" id="index" onclick="document.location=this.id+'.html';return false;">
-                <img src="photos/pskPNG3.png" alt="Image of header" class="nav-image">
-            </a>
-            <a href="merch.html">Merch</a>
-            <a href="https://www.buymeacoffee.com">Menu</a>
-        </nav>
-      </header>
+    <div id="login">
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+        <button onclick="checkPassword()">Submit</button>
+    </div>
 
-    <main>
-        <div id="hero">
-            <div class="section">
-                <div id="Welcome">
-                    <h2>Welcome to Powell's Secret Kitchen</h2>
-                    <p>Sandwhiches for the people.</p>
-                    <button id="cta-button">Map to the Kitchen</button>
-                </div>
-            </div>
-            <div class="merch-itemsmain">
-                <div class="merch-itemmain">
-                    <a class="merchA" href="link_to_merch1.html">
-                        <img class="imgmerch" src="photos/background.png" alt="Description of Merch 1">
-                        <p class="merchmainP">Caption for Merch 1</p>
-                    </a>
-                </div>
-            </div>
-            <div class="section">
-                <div id="test" style="display: flex;">
-                    <div class="image-content">
-                        <img src="photos/pskPNG3.png" alt="Description of Image">
-                    </div>
-                    <div class="text-content">
-                        <h3>Welcome part 2</h3>
-                        <p>Lorem ipsum dolor sit amet. Quo ratione impedit ad consequuntur vero est recusandae sunt? Et consequatur consequatur ut nulla libero ea cumque perferendis. Ea molestias nulla eum numquam sequi eum iusto assumenda et perspiciatis ipsa aut minus adipisci.</p>
-                        <p>
+    <div id="content">
+        <header id = "main_header">
+            <h1>Powell's Secret Kitchen</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a class="imgbtn" href="index.html" id="index" onclick="document.location=this.id+'.html';return false;">
+                    <img src="photos/pskPNG3.png" alt="Image of header" class="nav-image">
+                </a>
+                <a href="merch.html">Merch</a>
+                <a href="https://www.buymeacoffee.com">Menu</a>
+            </nav>
+        </header>
 
-                            Et quae fugit et expedita voluptate cum assumenda temporibus est sunt natus! Et laudantium voluptatum et necessitatibus harum a sunt quasi aut eius quia. Qui odio repellendus vel illo animi et aperiam voluptatem. Est nesciunt tempora ea quis minus eum adipisci accusamus a dolorum consectetur.</p>
+        <main>
+            <div id="hero">
+                <div class="section">
+                    <div id="Welcome">
+                        <h2>Welcome to Powell's Secret Kitchen</h2>
+                        <p class="slogan">Sandwiches for the People.</p>
+                        <button id="cta-button">Map to the Kitchen</button>
                     </div>
                 </div>
+                <div class="merch-itemsmain">
+                    <div class="merch-itemmain">
+                        <a class="merchA" href="link_to_merch1.html">
+                            <img class="imgmerch" src="photos/background.png" alt="Description of Merch 1">
+                            <p class="merchmainP">Caption for Merch 1</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="section">
+                    <div id="test" style="display: flex;">
+                        <div class="image-content">
+                            <img src="photos/pskPNG3.png" alt="Description of Image">
+                        </div>
+                        <div class="text-content">
+                            <h3>Welcome part 2</h3>
+                            <p>Lorem ipsum dolor sit amet. Quo ratione impedit ad consequuntur vero est recusandae sunt? Et consequatur consequatur ut nulla libero ea cumque perferendis. Ea molestias nulla eum numquam sequi eum iusto assumenda et perspiciatis ipsa aut minus adipisci.</p>
+                            <p>
+
+                                Et quae fugit et expedita voluptate cum assumenda temporibus est sunt natus! Et laudantium voluptatum et necessitatibus harum a sunt quasi aut eius quia. Qui odio repellendus vel illo animi et aperiam voluptatem. Est nesciunt tempora ea quis minus eum adipisci accusamus a dolorum consectetur.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 
-    </main>
+        </main>
 
-    <footer>
-        <p>Copyright © 2023. All rights reserved.</p>
-        <div id="social-media">
-            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
-        </div>
-    </footer>
+        <footer>
+            <p>Copyright © 2023. All rights reserved.</p>
+            <div id="social-media">
+                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+            </div>
+        </footer>
+    </div>
+
 
 </body>
 

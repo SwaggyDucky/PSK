@@ -1,3 +1,15 @@
+function checkPassword() {
+  var passwordEntered = document.getElementById("password").value;
+  var correctPassword = "yourPassword"; // Replace with your password
+
+  if (passwordEntered === correctPassword) {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("content").style.display = "block";
+  } else {
+      alert("Incorrect password!");
+  }
+}
+
 document.getElementById('cta-button').addEventListener('click', function() {
     var modal = document.getElementById('modal');
     modal.style.display = "block";
