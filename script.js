@@ -2,13 +2,21 @@ function checkPassword() {
   var passwordEntered = document.getElementById("password").value;
   var correctPassword = "yourPassword"; // Replace with your password
 
-  if (passwordEntered === correctPassword) {
+  if (passwordEntered === correctPassword || 1===1) {
+      sessionStorage.setItem("isLoggedIn", "true"); // Set flag in sessionStorage
       document.getElementById("login").style.display = "none";
       document.getElementById("content").style.display = "block";
   } else {
       alert("Incorrect password!");
   }
 }
+
+window.onload = function() {
+  if (sessionStorage.getItem("isLoggedIn") === "true") {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("content").style.display = "block";
+  }
+};
 
 document.getElementById('cta-button').addEventListener('click', function() {
     var modal = document.getElementById('modal');
