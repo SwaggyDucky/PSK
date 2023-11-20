@@ -11,6 +11,15 @@
   display: none;
 }
 
+.image-container{
+  width:100%;
+  text-align: center;
+}
+
+.contents{
+  display: none;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -174,6 +183,16 @@ nav li {
   }
 
   #main_header nav a {
+    color: #fff;
+    display: inline-block;
+    padding: 5px 5px;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 2px;
+    transform: translateZ(0);
+  }
+
+  #about_header nav a {
     color: #fff;
     display: inline-block;
     padding: 5px 5px;

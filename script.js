@@ -11,6 +11,28 @@ function checkPassword() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  let images = document.querySelectorAll('.image-container img');
+  let currentIndex = 0;
+  let imageDisplayDuration = 2000; // Duration each image is displayed, in milliseconds
+
+  function showNextImage() {
+      if (currentIndex > 0) {
+          images[currentIndex - 1].style.display = 'none'; // Hide previous image
+      }
+      if (currentIndex < images.length) {
+          images[currentIndex].style.display = 'block'; // Show current image
+          currentIndex++;
+          setTimeout(showNextImage, imageDisplayDuration);
+      } else {
+          document.querySelector('.image-container').style.display = 'none';
+          document.querySelector('.contents').style.display = 'block';
+      }
+  }
+
+  showNextImage();
+});
+
 window.onload = function() {
   if (sessionStorage.getItem("isLoggedIn") === "true") {
       document.getElementById("login").style.display = "none";
