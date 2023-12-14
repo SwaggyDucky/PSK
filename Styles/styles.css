@@ -7,19 +7,6 @@
   --stickyheaderblack: #151414;
 }
 
-#content{
-  display: none;
-}
-
-.image-container{
-  width:100%;
-  text-align: center;
-}
-
-.contents{
-  display: none;
-}
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -106,6 +93,10 @@ body {
 
 .slogan{
   font-family: 'Paytone One', sans-serif;
+}
+
+h2{
+  font-family: 'Payton One', 'sans-serif';
 }
 
 nav ul {
