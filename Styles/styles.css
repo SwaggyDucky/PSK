@@ -122,7 +122,7 @@ nav li {
   padding: 60px, 0;
 }
 
-#hero, #about-us, #merch{
+#hero, #about-us, #merch, #menu{
   background-image: url("../photos/foil5.jpg");
   background-size: cover;
   color: #121212;
