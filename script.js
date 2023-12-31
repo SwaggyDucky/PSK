@@ -16,17 +16,30 @@ window.addEventListener('click', function(event) {
     }
 });
 
-$(function(){
+$(function() {
   var previousScroll = 0;
-  $(window).scroll(function(){
+  var topThreshold = 80; // Set the threshold distance from the top of the page
+
+  $(window).scroll(function() {
     var currentScroll = $(this).scrollTop();
-    if(currentScroll >= previousScroll+5){
+
+    if (currentScroll <= topThreshold) {
+      $("body").removeClass("sticky-header");
+    } else if (currentScroll >= previousScroll + 5) {
       $("body").addClass("sticky-header");
-    }else if (previousScroll - currentScroll > 5){
+    } else if (previousScroll - currentScroll > 5) {
       $("body").removeClass("sticky-header");
     }
     previousScroll = currentScroll;
   });
+});
+
+document.querySelector('.imgmerch').addEventListener('mouseover', function() {
+  this.src = 'photos/pskShirtBack.jpg';
+});
+
+document.querySelector('.imgmerch').addEventListener('mouseout', function() {
+  this.src = 'photos/pskShirtFront.jpg';
 });
 
 

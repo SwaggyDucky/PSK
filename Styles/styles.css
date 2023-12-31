@@ -134,8 +134,13 @@ nav li {
   max-height: 2100px;
 }
 
-#about-us, #merch{
+#about-us, #merch, .kimballpic{
   padding: 60px 0;
+}
+
+.img-cnt img {
+  width: 100%; /* Makes the image fill the container width */
+  height: auto; /* Adjusts height automatically to maintain aspect ratio */
 }
 
 #Welcome {
