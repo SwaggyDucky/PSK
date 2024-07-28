@@ -380,3 +380,11 @@ body.sticky-header #main_header h1 {
     margin: 10px;
   }
 }
+
+.image-content img {
+  margin-right: 20px; /* Adjust the value as needed */
+}
+
+.text-content {
+  padding-left: 20px; /* Adjust the value as needed */
+}
