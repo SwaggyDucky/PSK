@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Paytone One', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -28,9 +28,9 @@ body {
 }
 
 #main_header h1 {
-  font-size: 42px;
+  font-size: 50px;
   color: #fff;
-  line-height: 60px;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 100;
   transition: all 0.3s ease;
@@ -93,7 +93,18 @@ body {
 
 .slogan{
   font-family: 'Paytone One', sans-serif;
+  font-size: 15.5px;
 }
+
+h2, h1, h3{
+  font-family: 'Paytone One', sans-serif;
+}
+
+h2{
+  font-size: 30px;
+}
+
+
 
 nav ul {
   list-style-type: none;
@@ -177,7 +188,8 @@ nav li {
   #main_header nav a {
     color: #fff;
     display: inline-block;
-    padding: 5px 5px;
+    padding: 3px 5px;
+    /*padding: 5px 5px;*/
     line-height: 1;
     text-decoration: none;
     border-radius: 2px;
@@ -197,30 +209,50 @@ nav li {
 }
 
 .merch-itemmain {
-  background-color: #1d1b1a;
-  border: 1px solid #e0e0e0; 
-  overflow: hidden; 
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  overflow: hidden;
   text-align: center;
   box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 20px;
+  padding: 15px;
+}
+
+.merch-itemmain:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .merch-itemmain .merchA {
-  background-color: #1d1b1a;
   display: block;
-  color: inherit;
+  color: #2b2b2b;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.merch-itemmain .merchA:hover {
+  color: #ffcc00;
 }
 
 .merch-itemmain .imgmerch {
   max-width: 100%;
   display: block;
+  border-bottom: 1px solid #2b2b2b;
 }
 
 .merch-itemmain .merchmainP {
-  background-color: #1d1b1a;
   color: #e0e0e0;
-  margin: 10px 0;
-  font-size: 16px;
+  margin: 15px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.merch-itemmain .price {
+  font-weight: bold;
+  color: #ffcc00;
+  font-size: 20px;
 }
 
 #test {
@@ -239,6 +271,7 @@ nav li {
   text-align: left;
   color: #aaa;
   padding-right: 20px;
+  padding-left: 20px
 }
 
 .image-content {
@@ -249,6 +282,7 @@ nav li {
 .image-content img {
   max-width: 100%;
   height: auto;
+  margin-right: 20px
 }
 
 .menu {
@@ -283,12 +317,28 @@ nav li {
 }
 
 #cta-button {
-  padding: 10px 20px;
-  background-color: #151414;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 25px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Paytone One', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#cta-button:hover {
+  background: linear-gradient(135deg, #e38800, #d2a800);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#cta-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -316,6 +366,11 @@ footer {
   padding: 20px;
   border: 1px solid #888;
   width: 540px;
+  position: relative; /* Ensure it can be positioned within the modal */
+  top: 50%; /* Push down to the vertical center */
+  transform: translateY(-50%); /* Adjust back upwards by half of its own height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+  border-radius: 8px; /* Optional: Rounds the corners */
 }
 
 .modal-content img {
@@ -350,7 +405,7 @@ body.sticky-header #main_header h1 {
 
 @media (max-width: 900px) { /* This means when the screen is 768px wide or smaller */
   #main_header {
-    height: 200px; /* You can adjust this to your desired height */
+    height: 220px; /* You can adjust this to your desired height */
   }
 
   .modal {
@@ -379,12 +434,4 @@ body.sticky-header #main_header h1 {
   #Welcome, #test {
     margin: 10px;
   }
-}
-
-.image-content img {
-  margin-right: 20px; /* Adjust the value as needed */
-}
-
-.text-content {
-  padding-left: 20px; /* Adjust the value as needed */
 }
